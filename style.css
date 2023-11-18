@@ -21,3 +21,6 @@ footer section h2{
     padding: 1rem;
     color: aliceblue;
 }
+li{
+    list-style: none;
+}

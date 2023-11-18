@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MACS Department</title>
+    <script src="https://kit.fontawesome.com/f4f1497957.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -14,23 +15,25 @@
     />
   </head>
   <body>
+
+    
     <!--HEADER START-->
     <div class="card rounded-0 border border-0 bg-dark text-white">
       <ul class="list-group list-group-horizontal">
-        <button
-          type="button"
+        <li><a
           class="btn btn-dark p-2 fw-lighter"
           style="width: 200px"
+          href="https://www.nitk.ac.in/"
         >
           NITK Surathkal
-        </button>
-        <button
-          type="button"
+        </a></li>
+        <li><a
           class="btn btn-dark p-2 fw-lighter"
           style="width: 200px"
+          href="https://iris.nitk.ac.in/about_us#:~:text=Who%20are%20we%3F,related%20procedures%20take%20place%20methodically."
         >
           About IRIS
-        </button>
+        </a></li>
         <div style="width: 200px"></div>
         <div style="width: 200px"></div>
         <div style="width: 200px"></div>
@@ -66,27 +69,27 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item p-1">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item dropdown p-1">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="#programmes"
                 role="button"
                 data-bs-toggle="dropdown"
               >
                 Programmes
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Under Graduate</a></li>
+                <li><a class="dropdown-item" href="#programmes">Under Graduate</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Post Graduate</a></li>
+                <li><a class="dropdown-item" href="#programmes">Post Graduate</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown p-1">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="#courses"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -104,7 +107,7 @@
             <li class="nav-item dropdown p-1">
               <a
                 class="nav-link dropdown-toggle"
-                href="#"
+                href="#people"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -112,15 +115,15 @@
                 People
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">HOD</a></li>
+                <li><a class="dropdown-item" href="#faculty">HOD</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Faculty</a></li>
+                <li><a class="dropdown-item" href="#faculty">Faculty</a></li>
                 <li></li>
               </ul>
             </li>
 
             <li class="nav-item p-1">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#contact"
                 >Contact</a
               >
             </li>
@@ -151,7 +154,7 @@
     </nav>
     <!--NAVBAR END-->
     <!--main-->
-    <section class="p-2">
+    <section class="p-2"  id="home">
       <!--VISION-->
       <div class="card mb-3">
         <div class="row g-0">
@@ -166,7 +169,7 @@
           <div class="col-md-9">
             <div class="card-body p-5">
               <h5 class="card-title mt-3 mb-3">
-                <i class="fa-solid fa-bullseye"></i>VISION
+                <i class="fa fa-bullseye p-2"></i>VISION
               </h5>
               <p class="card-text">
                 The vision of Department of Mathematical And Computational
@@ -302,8 +305,8 @@
     </section>
     <!--main end-->
     <!--PROGRAMMES-->
-    <ul class="nav nav-tabs m-2" id="myTabs">
-      <li class="nav-item">
+    <ul class="nav nav-tabs m-lg-2 mb-0" id="myTabs">
+      <li class="nav-item"  id="programmes">
         <a class="nav-link active" aria-current="page" href="#" data-tab="tab1"
           >Under Graduate</a
         >
@@ -313,7 +316,7 @@
       </li>
     </ul>
     <div
-      class="tab-content m-2 p-4"
+      class="tab-content m-2 p-2"
       style="border: 1px solid lightgray; border-radius: 5px"
     >
       <div id="tab1" class="tab-pane active">
@@ -374,6 +377,7 @@
     <!--PROGRAMMES END-->
     <!--PLACEMENT-->
     <section
+    id="placement"
       class="m-2 p-4"
       style="border: 1px solid lightgray; border-radius: 5px"
     >
@@ -522,6 +526,7 @@
     <!--PLACEMENT END-->
     <!--FACULTY-->
     <section
+    id="faculty"
       class="m-2 p-4"
       style="border: 1px solid lightgray; border-radius: 5px"
     >
@@ -566,7 +571,8 @@
     <!--FACULTY END-->
     <!--CONTACT FORM-->
     <section
-      class="m-2 p-4 mx-auto"
+    id="contact"
+      class="mb-sm-3 p-4 mx-auto"
       style="border: 1px solid lightgray; border-radius: 5px; width: 50rem"
     >
       <h4>CONTACT US</h4>
@@ -624,13 +630,17 @@
     </script>
 
     <!--FOOTER-->
-    <footer class="card-footer p-5 bg-primary text-center">
+    <footer class="card-footer p-4 pb-0 bg-primary text-center">
       <section class="left">
-        <h6 style="color: white">CONTACT US</h6>
+        <h6 style="color: white">CONTACT INFO</h6>
+        <p></p>
         <p style="color: white">
           Dr. R. Madhusudhan , Professor and Head Department of MACS, NITK,
           Surathkal P. O. Srinivasnagar, Mangalore - 575 025 Karnataka, India.
         </p>
+        <p style="color:white"><i class="fa fa-phone" style="color: #ffffff;"></i> +91-0824-2474048</p>
+        <p style="color:white"><i class="fa fa-fax" style="color: #ffffff;"></i> +91-0824-2474048</p>
+        <p style="color:white"><i class="fa fa-envelope" style="color: #ffffff;"></i> hodmacs@nitk.edu.in</p>
       </section>
       <section class="right"></section>
     </footer>
@@ -646,5 +656,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
